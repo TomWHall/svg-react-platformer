@@ -1,5 +1,5 @@
 {
-  "name": "svgreactplatformerprivate",
+  "name": "svgreactplatformer",
   "version": "0.1.0",
   "description": "PoC of a retro 2D platform game using SVG, React, and dynamic JavaScript modules",
   "main": "src/js/index.js",
