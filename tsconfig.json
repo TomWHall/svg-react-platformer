@@ -1,0 +1,14 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": false,
+    "target": "ES2017",
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "jsx": "react"
+  }
+}

@@ -1,0 +1,215 @@
+@namespace svg url(http://www.w3.org/2000/svg);
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+}
+
+#app {
+    position: relative;
+}
+
+svg {
+    position: absolute;
+    background: #000;
+}
+
+    svg.game-over {
+        animation: fadeOut ease 3s forwards;
+        -webkit-animation: fadeOut ease 3s forwards;
+        -moz-animation: fadeOut ease 3s forwards;
+        -o-animation: fadeOut ease 3s forwards;
+        -ms-animation: fadeOut ease 3s forwards;
+    }
+
+    svg|a:link, svg|a:visited {
+        cursor: pointer;
+    }
+
+    svg|a text,
+    text svg|a {
+        text-decoration: underline;
+    }
+
+.screen-name-container {
+    fill: #ffffff;
+}
+
+.screen-name, .lives, .items {
+    font-family: 'Courier New';
+    font-size: 44px;
+    font-weight: bold;
+    fill: #000000;
+}
+
+.screen-name {
+    fill: #000000;
+}
+
+.lives {
+    fill: #ffff00;
+}
+
+.items {
+    fill: #00ffff;
+}
+
+.github {
+    font-family: 'Courier New';
+    font-size: 20px;
+    fill: #ffff00;
+}
+
+.player.lost-life rect, .player.lost-life circle {
+    fill: #ffffff;
+    animation: fadeOut ease 3s forwards;
+    -webkit-animation: fadeOut ease 3s forwards;
+    -moz-animation: fadeOut ease 3s forwards;
+    -o-animation: fadeOut ease 3s forwards;
+    -ms-animation: fadeOut ease 3s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.bricks {
+    fill: url(#bricks)
+}
+
+.dance-floor {
+    fill: url(#dance-floor)
+}
+
+.collectable {
+    animation: blink 1s linear infinite;
+    -webkit-animation: blink 1s linear infinite;
+    -moz-animation: blink 1s linear infinite;
+    -o-animation: blink 1s linear infinite;
+    -ms-animation: blink 1s linear infinite;
+}
+
+    .collectable.collected {
+        display: none;
+    }
+
+.cup {
+    fill: url(#cup);
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.black {
+    fill: #000000;
+}
+
+.white {
+    fill: #ffffff;
+}
+
+.red {
+    fill: #aa0000;
+}
+
+.dark-red {
+    fill: #550000;
+}
+
+.bright-red {
+    fill: #ff0000;
+}
+
+.grey {
+    fill: #aaaaaa;
+}
+
+.dark-grey {
+    fill: #555555;
+}
+
+.brown {
+    fill: #aa5500;
+}
+
+.blue {
+    fill: #0000aa;
+}
+
+.dark-blue {
+    fill: #000055;
+}
+
+.purple-blue {
+    fill: #0055ff;
+}
+
+.green {
+    fill: #00aa55;
+}
+
+.pale-pink {
+    fill: #ffaaaa;
+}
+
+.yellow {
+    fill: #ffff00;
+}
+
+.egg-yellow {
+    fill: #ffaa00;
+}
+
+.pale-yellow {
+    fill: #ffffaa;
+}

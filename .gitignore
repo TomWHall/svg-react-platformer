@@ -1,0 +1,6 @@
+*.js
+build/*
+node_modules/*
+npm-debug.log.*
+.vs/*
+.idea
