@@ -91,8 +91,8 @@ interface GameSnapshot {
     animationPhase: number;
 
     time: number;
-
     lives: number;
+    collectedItems: CollectedItem[];
 }
 
 

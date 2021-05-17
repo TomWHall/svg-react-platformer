@@ -48,6 +48,7 @@ export default class Game {
         this.player.animationPhase = gameState.animationPhase;
 
         this.previousTime = gameState.time;
+        this.collectedItems = gameState.collectedItems;
 
         this.handleRequestScreen(this.screenX, this.screenY);
 
@@ -128,7 +129,8 @@ export default class Game {
             displayDirection: this.player.displayDirection,
             animationPhase: this.player.animationPhase,
             lives: this.lives,
-            time: this.previousTime
+            time: this.time,
+            collectedItems: this.collectedItems
         };
     }
 
@@ -143,7 +145,8 @@ export default class Game {
             displayDirection: Direction.Right,
             animationPhase: 0,
             lives: 10,
-            time: performance.now()
+            time: performance.now(),
+            collectedItems: []
         };
     }
 
